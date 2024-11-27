@@ -88,3 +88,84 @@ a.primary-cta {
     color: black;
     border-radius: .3rem;
 }
+
+.cat {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 3em;
+    /* overflow: hidden; */ 
+    /*overflow: hidden; is to avoide the content to get out of div */
+    img {
+        width: 70%;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .inner-circle, .outer-circle {
+        position: absolute;
+        border-radius: 50%;
+        left:50%;
+        top: 50%;
+        transform: translateX(-50%, -50%);
+    }
+    .inner-circle {
+        background: #FFBEC3;
+        width: 300px;
+        height: 300px;
+        z-index: -1;
+    }
+    .outer-circle {
+        background:white;
+        width: 500px;
+        height: 500px;
+        z-index: -2;
+    }
+}
+
+@media (min-width: 970px) {
+    .wrap {
+        margin: 2 4em;
+    }
+    .hide-desktop {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
+    .header-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+
+        .divider{
+            height: 50px;
+            width: 1px;
+            border-right: 1px solid grey;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+        
+    }
+
+    nav ul {
+        position: unset;
+        background: none;
+        display: flex;
+        gap: 2em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+
+        li a {
+            font-size: 1.2rem;
+        }
+    }
+
+}
+ 
