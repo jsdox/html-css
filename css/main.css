@@ -156,6 +156,9 @@ a.primary-cta {
             color: black;
             font-size: 1.2rem;
         }
+        a img {
+            height: 50px;;
+        }
     }
 
     nav ul {
@@ -193,16 +196,16 @@ a.primary-cta {
             width: 500px;
             height: 500px;
         }
-        .outer-circle {
+        /* .outer-circle {
             width: 1000px;
             height: 1000px;
-        }
+        } */
     }
 
     .cat-container {
         position: absolute;
         z-index: -1;
-        width: 50%;
+        width: 65%;
         top: 20%;
         right: 0;
     }
